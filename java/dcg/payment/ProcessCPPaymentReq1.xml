@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:ProcessCPPaymentRequest xmlns:ns0="http://xmlns.cpw.co.uk/CPW/Common/Payment/ProcessCPPayment">
+    <ns0:CommonHeader>
+        <ns1:commonHeader xmlns:ns1="http://xmlns.cpw.co.uk/CPWIntegrationsTibco/Common/CommonHeader">
+            <ns1:id/>
+            <ns1:paradigm>REQUEST</ns1:paradigm>
+            <ns1:version>1.0.0</ns1:version>
+            <ns1:from ns1:componentVersion="1.0.0"/>
+            <ns1:to ns1:destination="CPW.GBR.QA.Public.Request.Common.Payment.ProcessCPPayment.1"/>
+            <ns1:tracking>
+                <ns1:item ns1:engine="EPOSRouteProcessCPPaymentV2GBR-1-Process_Archive" ns1:sequenceNo="1" ns1:service="EPOS.Routing.ProcessCPPayment" ns1:status="S" ns1:timestamp="2015-12-03T13:19:17.595Z"/>
+            </ns1:tracking>
+            <ns1:timing>
+                <ns1:timing ns1:name="EPOS.Routing.ProcessCPPayment" ns1:timestamp="2015-12-03T13:19:17.595Z"/>
+            </ns1:timing>
+        </ns1:commonHeader>
+    </ns0:CommonHeader>
+    <ns1:paymentTransactionId xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardPaymentDetails">158666183/39044600</ns1:paymentTransactionId>
+    <ns1:paymentTransactionType xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardPaymentDetails">PURCHASE</ns1:paymentTransactionType>
+    <ns1:creditCardPaymentAmount xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardPaymentDetails">101</ns1:creditCardPaymentAmount>
+    <ns1:pspAccountId xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardPaymentDetails"/>
+    <ns1:countryCode xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardPaymentDetails"/>
+    <ns1:serviceProvider xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardPaymentDetails"/>
+    <ns1:terminalIPAddress xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CPCreditCardPaymentDetails">10.44.122.204</ns1:terminalIPAddress>
+    <ns1:operationMode xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CPCreditCardPaymentDetails">EFT</ns1:operationMode>
+    <ns1:mailbox xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CPCreditCardPaymentDetails">UNI_MBOX_0012C027</ns1:mailbox>
+    <ns1:node xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CPCreditCardPaymentDetails">PIEQA1</ns1:node>
+    <ns0:TokenDetails>
+        <ns1:paymentCardToken xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardTokenDetails"/>
+    </ns0:TokenDetails>
+    <ns1:offlineAuthCode xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/CardPaymentDetails">123456</ns1:offlineAuthCode>
+    <ns0:LoginDetails>
+        <ns1:userId xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/TerminalIntegrationCommand">1234</ns1:userId>
+        <ns1:personalIdentificationNumber xmlns:ns1="http://xmlns.cpw.co.uk/CPW/CDM/TerminalIntegrationCommand">1234</ns1:personalIdentificationNumber>
+    </ns0:LoginDetails>
+    <ns0:isFirstCardPaymentAttempt/>
+</ns0:ProcessCPPaymentRequest>
